@@ -55,6 +55,12 @@ button[type='submit'] {
   background-color: hsl(212, 100%, 50%);
   border: none;
   color: white;
+  cursor: pointer;
+  transition: filter .2s;
+}
+
+button[type='submit']:hover {
+  filter: brightness(.9);
 }
 
 .container {
