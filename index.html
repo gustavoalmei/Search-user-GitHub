@@ -16,7 +16,7 @@
   <body>
     <main>
       <header>
-        <div class="search_user">
+        <form onsubmit="getInforUserGitHub(event)" class="search_user">
           <img src="img/search-alt-2-regular-24.png" alt="" />
           <input
             id="searchName"
@@ -27,11 +27,10 @@
             type="submit"
             value="Search"
             id="submit"
-            onclick="getInforUserGitHub()"
           >
             Search
           </button>
-        </div>
+        </form>
       </header>
       <div class="container">
         <div class="userAvatar">
