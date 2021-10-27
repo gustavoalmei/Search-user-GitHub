@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search user</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="search_user">
+          <img src="img/search-alt-2-regular-24.png" alt="" />
+          <input
+            id="searchName"
+            type="text"
+            placeholder="Search GitHub name..."
+          />
+          <button
+            type="submit"
+            value="Search"
+            id="submit"
+            onclick="getInforUserGitHub()"
+          >
+            Search
+          </button>
+        </div>
+      </header>
+      <div class="container">
+        <div class="userAvatar">
+          <img id="photoUser" src="img/octocat.gif" alt="Avatar user" />
+        </div>
+        <div class="container_user">
+          <div class="user_info">
+            <div class="user">
+              <span id="nameUser">Name user</span>
+              <a id="login" href="" target="_blank">@Login</a>
+            </div>
+            <span id="date_joined">Date joined</span>
+          </div>
+          <div class="userBio">
+            <span id="bio">Bio user</span>
+          </div>
+          <div class="informations">
+            <span id="repository">0 repository</span>
+            <span id="followers">0 followers</span>
+            <span id="following">0 following</span>
+          </div>
+          <div class="social">
+            <div>
+              <img src="/img/current-location-regular-24.png" alt="localization user" />
+              <span id="localization">Location</span>
+            </div>
+            <div>
+              <img src="/img/twitter-logo-24.png" alt="Link twitter" />
+              <a href="" id="twitterLink" target="_blank">
+                <span id="twitter">Twitter</span>
+              </a>
+            </div>
+            <div>
+              <img src="/img/blogger-logo-24.png" alt="Link blog" />
+              <a href="" id="blogLink" target="_blank">
+                <span id="blog">Blog</span>
+              </a>
+            </div>
+            <div>
+              <img src="./img/business-solid-24.png" alt="Link company" />
+                <span id="company">Company</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="/main.js"></script>
+  </body>
+</html>
