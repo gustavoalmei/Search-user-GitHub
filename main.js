@@ -1,4 +1,6 @@
-function getInforUserGitHub() {
+function getInforUserGitHub(event) {
+  event.preventDefault()
+
   const url = `https://api.github.com/users/${searchName.value}`
   fetch(url)
     .then(response => response.json())
