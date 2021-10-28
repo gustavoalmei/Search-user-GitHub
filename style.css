@@ -43,13 +43,14 @@ header {
 }
 
 .dark .container {
-  background-color: #111;
+  background-color: #313131;
   box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.1);
 }
 
 .dark input[type='text'] {
-  background-color: #111;
+  background-color: #313131;
   box-shadow: 10px 10px 20px rgba(255, 255, 255, 0.1);
+    color: white;
 }
 
 .dark .informations {
@@ -160,7 +161,6 @@ input[type='text'] {
   background-color: #3131;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
   border: none;
-  color: white;
 }
 
 button[type='submit'] {
