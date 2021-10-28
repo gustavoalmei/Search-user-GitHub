@@ -1,3 +1,7 @@
+checkbox.addEventListener("change", ()=>{ 
+  document.body.classList.toggle("dark")
+});
+
 function getInforUserGitHub(event) {
   event.preventDefault()
 
