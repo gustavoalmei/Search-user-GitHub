@@ -1,6 +1,16 @@
-checkbox.addEventListener("change", ()=>{ 
-  document.body.classList.toggle("dark")
-});
+checkbox.addEventListener('change', () => {
+  document.body.classList.toggle('dark')
+})
+
+formatDate = data => {
+  let date = new Date(data)
+  let day = date.getDay()
+  let month = date.getMonth()
+  let year = date.getFullYear()
+  let DateCorrect = `${day}/${month}/${year}`
+  
+  return DateCorrect
+}
 
 function getInforUserGitHub(event) {
   event.preventDefault()
@@ -10,6 +20,13 @@ function getInforUserGitHub(event) {
     .then(response => response.json())
     .then(data => {
       if (data.login !== undefined) {
+        for (let value in data) {
+          if (data[value] == '') {
+            data[value] = 'Não possuí'
+          }else if(data[value] == null){
+            data[value] = 'Não possuí'
+        }
+      }
         photoUser.src = data.avatar_url
         nameUser.textContent = data.name
         login.textContent = `@${data.login}`
@@ -24,6 +41,7 @@ function getInforUserGitHub(event) {
         blog.textContent = data.blog
         blogLink.href = `https://${data.blog}/`
         company.textContent = data.company
+        dateJoined.textContent = formatDate(data.created_at)
       } else {
         alert('Digite o nome de um usuário.')
       }
