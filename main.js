@@ -3,13 +3,8 @@ checkbox.addEventListener('change', () => {
 })
 
 formatDate = data => {
-  let date = new Date(data)
-  let day = date.getDay()
-  let month = date.getMonth()
-  let year = date.getFullYear()
-  let DateCorrect = `${day}/${month}/${year}`
-  
-  return DateCorrect
+  let date = new Date(data).toLocaleDateString('pt-br')
+  return date
 }
 
 function getInforUserGitHub(event) {
