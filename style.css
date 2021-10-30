@@ -386,6 +386,7 @@ a {
 
   .container_user{
     width: 300px;
+    align-items: center;
     gap: 15px;
   }
 
