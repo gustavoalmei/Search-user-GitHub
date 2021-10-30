@@ -6,7 +6,6 @@
 }
 
 main {
-  width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -323,13 +322,7 @@ a {
 }
 
 @media (max-width: 500px) {
-  .github-corner:hover .octo-arm {
-    animation: none;
-  }
 
-  .github-corner .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
-  }
 }
 
 .dark .github-corner {
@@ -347,6 +340,7 @@ a {
 .dark .github-corner-dark:hover .octo-arm {
   animation: octocat-wave 560ms ease-in-out;
 }
+
 @keyframes octocat-wave {
   0%,
   100% {
@@ -359,14 +353,6 @@ a {
   40%,
   80% {
     transform: rotate(10deg);
-  }
-}
-@media (max-width: 500px) {
-  .github-corner-dark:hover .octo-arm {
-    animation: none;
-  }
-  .github-corner-dark .octo-arm {
-    animation: octocat-wave 560ms ease-in-out;
   }
 }
 
@@ -409,6 +395,20 @@ a {
 }
 
 @media screen and (max-width:500px) {
+  .github-corner-dark:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner-dark .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+
+    .github-corner:hover .octo-arm {
+    animation: none;
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
   header{
     width: 90%;
     margin-top: 250px;
@@ -429,7 +429,7 @@ a {
   }
   
   .container{
-    width: 100%;
+    width: 90%;
     height: 900px;
   }
 
