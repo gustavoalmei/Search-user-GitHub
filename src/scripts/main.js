@@ -27,9 +27,12 @@ function getInforUserGitHub(event) {
         login.textContent = `@${data.login}`
         login.href = data.html_url
         bio.textContent = data.bio
-        followers.textContent = `${data.followers} followers`
-        following.textContent = `${data.following} following`
-        repository.textContent = `${data.public_repos} repository`
+        followers.textContent = `
+        ${new Intl.NumberFormat('pt-BR', {notation: "compact"}).format(data.followers)} followers`
+        following.textContent = `
+        ${new Intl.NumberFormat('pt-BR', {notation: "compact"}).format(data.following)} following`
+        repository.textContent = `
+        ${new Intl.NumberFormat('pt-BR', {notation: "compact"}).format(data.public_repos)} repository`
         localization.textContent = data.location
         twitter.textContent = data.twitter_username
         twitterLink.href = `https://twitter.com/${data.twitter_username}`
